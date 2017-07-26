@@ -1,26 +1,10 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 $id = $_GET['id'];
-
-$url = "https://chat.trolyfacebook.com/thoat/?id=".$id."&key=64x2x2w243q2u2e454x2";
+$key = $_GET['key'];
+$url = "https://chat.trolyfacebook.com/thoat/?id=".$id."&key=".$key;
 
 $data = file_get_contents($url);
-// $proxy = '89.248.173.141:3128';
-
-
-// $ch = curl_init();
-
-
-// curl_setopt($ch, CURLOPT_URL, $url);
-// curl_setopt($ch, CURLOPT_PROXY, $proxy);
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // read more about HTTPS http://stackoverflow.com/questions/31162706/how-to-scrape-a-ssl-or-https-url/31164409#31164409
-// curl_setopt($ch, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
-
-
-// $data = curl_exec($ch);
-
-// curl_close($ch); 
 
 
 $or5j = "خرجت مـالـ Conversation .. تحب تحكي مع شخص آخر أكتب Chat" ;
