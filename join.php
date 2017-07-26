@@ -1,26 +1,11 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 $id = $_GET['id'];
-
-$url = "https://chat.trolyfacebook.com/thamgia/?id=".$id."&key=64x2x2w243q2u2e454x2";
+$key = $_GET['id'];
+$url = "https://chat.trolyfacebook.com/thamgia/?id=".$id."&key=" . $key;
 
 
 $data = file_get_contents($url);
- // $loginpassw = 'ademking:123tunisie';
-    // $proxy_ip = 'us-wa.proxymesh.com';
-    // $proxy_port = '31280';
-
-
-    // $ch = curl_init();
-    // curl_setopt($ch, CURLOPT_URL, $url);
-    // curl_setopt($ch, CURLOPT_HEADER, 0);
-    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    // curl_setopt($ch, CURLOPT_PROXYPORT, $proxy_port);
-    // curl_setopt($ch, CURLOPT_PROXYTYPE, 'HTTP');
-    // curl_setopt($ch, CURLOPT_PROXY, $proxy_ip);
-    // curl_setopt($ch, CURLOPT_PROXYUSERPWD, $loginpassw);
-    // $data = curl_exec($ch);
-    // curl_close($ch);
 
 $or5j = "خرجت مـالـ Conversation .. تحب تحكي مع شخص آخر أكتب Chat" ;
 
