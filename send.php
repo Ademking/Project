@@ -2,48 +2,10 @@
 header('Content-Type: text/html; charset=utf-8');
 $id = $_GET['id'];
 $message = $_GET['message'];
-$url = "https://chat.trolyfacebook.com/chat/?noidung=". $message ."&id=". $id ."&key=64x2x2w243q2u2e454x2" ;
+$key = $_GET['key'];
+$url = "https://chat.trolyfacebook.com/chat/?noidung=". $message ."&id=". $id ."&key=" .$key;
 $data = file_get_contents($url);
 
-//62.96.10.98:3128
-
- // $loginpassw = 'ademking:123tunisie';
-    // $proxy_ip = 'us-wa.proxymesh.com';
-    // $proxy_port = '31280';
-
-
-    // $ch = curl_init();
-    // curl_setopt($ch, CURLOPT_URL, $url);
-    // curl_setopt($ch, CURLOPT_HEADER, 0);
-    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    // curl_setopt($ch, CURLOPT_PROXYPORT, $proxy_port);
-    // curl_setopt($ch, CURLOPT_PROXYTYPE, 'HTTP');
-    // curl_setopt($ch, CURLOPT_PROXY, $proxy_ip);
-    // curl_setopt($ch, CURLOPT_PROXYUSERPWD, $loginpassw);
-    // $data = curl_exec($ch);
-    // curl_close($ch);
-
-
-
-
-
-
-
-
-
-
-// $aContext = array(
-//     'http' => array(
-//           'proxy' => 'tcp://195.55.85.254:80',
-//         'request_fulluri' => true,
-//     ),
-// );
-// $cxContext = stream_context_create($aContext);
-
-
-
-
-// $data = file_get_contents($url, False, $cxContext);
 
 
 $or5j = "خرجت مـالـ Conversation .. تحب تحكي مع شخص آخر أكتب Chat" ;
